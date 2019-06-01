@@ -1,16 +1,16 @@
 # zipdev_contacts
 Test for PHP developer position
 
-#Description
+# Description
 Web API Rest to manage a contact book that save people contact information (email, phone, name, surname and photo).
 
-#File tree
+# File tree
 - Database
 install.sql (Script that install mysql tables)
 dump.sql (Script that install sample data)
 - contacts (Web App)
 
-#Web API Endpoints
+# Web API Endpoints
 
 ======= CREATE =======
 
