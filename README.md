@@ -23,11 +23,9 @@ Params
 object: contact, phone, email
 do: create
 
-Body :
-
-form-data: {"name":"John", "surname":"Smith", "email":"name@domain.com", "phone":"3312141618"}
-form-data: {"contact_id":"1", "phone":"3312141618"}
-form-data: {"contact_id":"1", "email":"name@domain.com"}
+Body: form-data: {"name":"John", "surname":"Smith", "email":"name@domain.com", "phone":"3312141618"}
+Body: form-data: {"contact_id":"1", "phone":"3312141618"}
+Body: form-data: {"contact_id":"1", "email":"name@domain.com"}
   
 ======= READ =======
 
@@ -53,10 +51,10 @@ object: contact, phone, email, surname, name
   
 Body
 
-x-www-form-urlencoded: {"contact_id":"1", "surname":"Scott"}
-x-www-form-urlencoded: {"contact_id":"1", "phone":"3316181952"}
-x-www-form-urlencoded: {"contact_id":"1", "name":"Steve"}
-x-www-form-urlencoded: {"contact_id":"1", "email":"new@domain.com"}
+Body: x-www-form-urlencoded: {"contact_id":"1", "surname":"Scott"}
+Body: x-www-form-urlencoded: {"contact_id":"1", "phone":"3316181952"}
+Body: x-www-form-urlencoded: {"contact_id":"1", "name":"Steve"}
+Body: x-www-form-urlencoded: {"contact_id":"1", "email":"new@domain.com"}
   
 ======= DELETE =======
 
@@ -71,9 +69,9 @@ object: contact, phone, email
   
 Body
 
-x-www-form-urlencoded: {"contact_id":"1"}
-x-www-form-urlencoded: {"email_id":"1"}
-x-www-form-urlencoded: {"phone_id":"1"}
+Body: x-www-form-urlencoded: {"contact_id":"1"}
+Body: x-www-form-urlencoded: {"email_id":"1"}
+Body: x-www-form-urlencoded: {"phone_id":"1"}
 
 ======= POST IMAGE =======
 
@@ -84,8 +82,7 @@ Params
 object: image
 do: upload
 
-Body :
-form-data: {"image":"Image sent via file form field", "contact_id":"1"}
+Body: form-data: {"image":"Image sent via file form field", "contact_id":"1"}
 
 #NOTES
 The Web API that i've created try to accomplish the tasks that was sent to me. Please, consider that i had so little time to get this done because of my current activities.
