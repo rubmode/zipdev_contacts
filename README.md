@@ -19,9 +19,12 @@ dump.sql (Script that install sample data)
 Method: POST
 
 Params 
+
 object: contact, phone, email
 do: create
+
 Body :
+
 form-data: {"name":"John", "surname":"Smith", "email":"name@domain.com", "phone":"3312141618"}
 form-data: {"contact_id":"1", "phone":"3312141618"}
 form-data: {"contact_id":"1", "email":"name@domain.com"}
@@ -33,6 +36,7 @@ Method: GET
 {path}/?do=read&object=phone&value=3312141618
 
 Params
+
 do: read
 object: contact, phone, email, surname, name
 value: contact_id, phone_id, email_id, surname, name
@@ -48,6 +52,7 @@ do: update
 object: contact, phone, email, surname, name
   
 Body
+
 x-www-form-urlencoded: {"contact_id":"1", "surname":"Scott"}
 x-www-form-urlencoded: {"contact_id":"1", "phone":"3316181952"}
 x-www-form-urlencoded: {"contact_id":"1", "name":"Steve"}
@@ -60,10 +65,12 @@ Method: DELETE
 {path}/?do=delete&object=email
 
 Params
+
 do: delete
 object: contact, phone, email
   
 Body
+
 x-www-form-urlencoded: {"contact_id":"1"}
 x-www-form-urlencoded: {"email_id":"1"}
 x-www-form-urlencoded: {"phone_id":"1"}
@@ -73,11 +80,12 @@ x-www-form-urlencoded: {"phone_id":"1"}
 {path}/?do=upload&object=image
 
 Params 
+
 object: image
 do: upload
+
 Body :
 form-data: {"image":"Image sent via file form field", "contact_id":"1"}
-
 
 #NOTES
 The Web API that i've created try to accomplish the tasks that was sent to me. Please, consider that i had so little time to get this done because of my current activities.
