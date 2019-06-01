@@ -23,9 +23,9 @@ Params
 object: contact, phone, email
 do: create
 
-Body: form-data: {"name":"John", "surname":"Smith", "email":"name@domain.com", "phone":"3312141618"}
-Body: form-data: {"contact_id":"1", "phone":"3312141618"}
-Body: form-data: {"contact_id":"1", "email":"name@domain.com"}
+Body: form-data: {"name":"John", "surname":"Smith", "email":"name@domain.com", "phone":"3312141618"}.
+Body: form-data: {"contact_id":"1", "phone":"3312141618"}.
+Body: form-data: {"contact_id":"1", "email":"name@domain.com"}.
   
 ======= READ =======
 
