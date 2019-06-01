@@ -12,7 +12,7 @@ dump.sql (Script that install sample data)
 
 # Web API Endpoints
 
-======= CREATE =======
+# /CREATE
 
 {path}/?do=create&object=contact
 
@@ -27,7 +27,7 @@ Params
 - Body: form-data: {"contact_id":"1", "phone":"3312141618"}.
 - Body: form-data: {"contact_id":"1", "email":"name@domain.com"}.
   
-======= READ =======
+# /READ
 
 Method: GET
 
@@ -39,7 +39,7 @@ Params
 - object: contact, phone, email, surname, name
 - value: contact_id, phone_id, email_id, surname, name
   
-======= UPDATE =======
+# /UPDATE
 
 Method: PUT
 
@@ -54,7 +54,7 @@ Params
 - Body: x-www-form-urlencoded: {"contact_id":"1", "name":"Steve"}
 - Body: x-www-form-urlencoded: {"contact_id":"1", "email":"new@domain.com"}
   
-======= DELETE =======
+# /DELETE
 
 Method: DELETE
 
@@ -71,7 +71,7 @@ Body
 - Body: x-www-form-urlencoded: {"email_id":"1"}
 - Body: x-www-form-urlencoded: {"phone_id":"1"}
 
-======= POST IMAGE =======
+# /POST IMAGE
 
 {path}/?do=upload&object=image
 
@@ -82,5 +82,5 @@ Params
 
 - Body: form-data: {"image":"Image sent via file form field", "contact_id":"1"}
 
-#NOTES
+# NOTES
 The Web API that i've created try to accomplish the tasks that was sent to me. Please, consider that i had so little time to get this done because of my current activities.
